@@ -53,10 +53,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     train(args, True)
-
-'''
-music	train_auc: 0.909 	 train_acc: 0.816 	 eval_auc: 0.814 	 eval_acc: 0.740 	 test_auc: 0.816 	 test_acc: 0.741 		[0.14, 0.27, 0.46, 0.48, 0.48, 0.51, 0.55, 0.56]
-book	train_auc: 0.861 	 train_acc: 0.768 	 eval_auc: 0.729 	 eval_acc: 0.670 	 test_auc: 0.727 	 test_acc: 0.666 		[0.09, 0.14, 0.26, 0.28, 0.28, 0.33, 0.34, 0.36]
-ml	train_auc: 0.938 	 train_acc: 0.865 	 eval_auc: 0.904 	 eval_acc: 0.827 	 test_auc: 0.907 	 test_acc: 0.829 		[0.25, 0.33, 0.56, 0.6, 0.6, 0.67, 0.69, 0.73]
-yelp	train_auc: 0.867 	 train_acc: 0.793 	 eval_auc: 0.838 	 eval_acc: 0.764 	 test_auc: 0.837 	 test_acc: 0.763 		[0.12, 0.23, 0.35, 0.37, 0.37, 0.43, 0.45, 0.47]
-'''
