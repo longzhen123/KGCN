@@ -68,7 +68,7 @@ def get_rec(train_records, eval_records,  test_records, item_set):
 
     rec = dict()
     users = list(test_records.keys())
-    for user in users[:100]:
+    for user in users:
         neg_items = list(item_set - set(train_records[user]) - set(eval_records[user]) - set(test_records[user]))
         rec[user] = np.random.choice(neg_items, 100).tolist() + np.random.choice(test_records[user], 1).tolist()
     return rec
